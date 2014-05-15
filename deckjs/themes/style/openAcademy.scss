@@ -1,10 +1,41 @@
 @import "compass/css3";
 @import "compass/css3/user-interface";
 
+@font-face {
+    font-family: 'Alef';
+    src: url('../Alef/Alef-bold.eot');
+    src: url('../Alef/Alef-bold.eot?#iefix') format('embedded-opentype'),
+    url('../Alef/Alef-bold.woff') format('woff'),
+    url('../Alef/Alef-bold.ttf') format('truetype'),
+    url('../Alef/Alef-bold.svg#alefbold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Alef';
+    src: url('../Alef/Alef-regular.eot');
+    src: url('../Alef/Alef-regular.eot?#iefix') format('embedded-opentype'),
+    url('../Alef/Alef-regular.woff') format('woff'),
+    url('../Alef/Alef-regular.ttf') format('truetype'),
+    url('../Alef/Alef-regular.svg#alefregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
 body {
     margin: 8px auto;
     padding: 0;
     direction:rtl;
+    font-family: 'Alef' !important;
+    font-size: 2em;
+}
+
+ol{
+    padding: 10px 50px 0 0;
 }
 
 .slide{
@@ -14,6 +45,7 @@ body {
 .iscoWatermark {
     /** might be problematic with mobile devices */
     max-width: 1024px;
+    z-index: 0;
 
     .left, .right {
         position: absolute;
@@ -46,8 +78,9 @@ body {
     width: 100%;
     text-align: center;
     padding: 25px 0;
-    font-size: 5em;
+    font-size: 4.5em;
     color: white !important;
+    white-space: nowrap;
 
     text-shadow: -3px 5px 5px #333,
     -2px 6px 8px rgba(0, 0, 0, .12),
@@ -80,8 +113,6 @@ body {
 }
 
 .deck-container {
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
-    font-size: 1.75em;
     background: rgb(244, 250, 254); /* Old browsers */
     @include background-image(linear-gradient(225deg, #FFFFFF, #3BC0F4));
     background-attachment: fixed;
@@ -111,10 +142,6 @@ body {
     }
 
     .slide {
-        h1, h2, h3, h4, h5, h6 {
-            font-family: "Hoefler Text", Constantia, Palatino, "Palatino Linotype", "Book Antiqua", Georgia, serif;
-        }
-
         h1 {
             color: #08455f;
 
@@ -134,11 +161,11 @@ body {
             padding: 10px;
             margin: 0;
 
-            .cssreflections & {
-                line-height: 1;
-                -webkit-box-reflect: below -0.5555em -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.3, transparent), color-stop(0.7, rgba(255, 255, 255, .1)), to(transparent));
-                -moz-box-reflect: below -0.5555em -moz-linear-gradient(top, transparent 0%, transparent 30%, rgba(255, 255, 255, .3) 100%);
-            }
+//            .cssreflections & {
+//                line-height: 1;
+//                -webkit-box-reflect: below -0.5555em -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.3, transparent), color-stop(0.7, rgba(255, 255, 255, .1)), to(transparent));
+//                -moz-box-reflect: below -0.5555em -moz-linear-gradient(top, transparent 0%, transparent 30%, rgba(255, 255, 255, .3) 100%);
+//            }
         }
 
         h3 {
@@ -150,6 +177,7 @@ body {
             background: #fff;
             position: relative;
             z-index: auto;
+            font-size: 2em;
 
             .borderradius & {
                 @include border-radius(5px);
@@ -192,11 +220,12 @@ body {
         }
 
         code {
-            color: #789;
+            color: rgb(209,86,0);
+            font-weight: bold;
+            font-size: 2em;
         }
 
         blockquote {
-            font-family: "Hoefler Text", Constantia, Palatino, "Palatino Linotype", "Book Antiqua", Georgia, serif;
             font-size: 2em;
             padding: 1em 2em .5em 2em;
             color: #000;
@@ -259,7 +288,6 @@ body {
         }
 
         .block {
-            font-family: "Hoefler Text", Constantia, Palatino, "Palatino Linotype", "Book Antiqua", Georgia, serif;
             font-size: 2em;
             padding: .5em 2em;
             color: #000;
@@ -402,4 +430,29 @@ footer {
         height: 50px;
 
     }
+}
+
+
+.sites{
+    clear: both;
+    text-align: center;
+
+}
+
+section{
+    z-index: 1;
+}
+
+.ltr{
+    direction: ltr;
+}
+
+.small,
+.deck-container .slide pre.small,
+.deck-container .slide code.small{
+    font-size: 1em;
+}
+
+.bold{
+    font-weight: bold;
 }
