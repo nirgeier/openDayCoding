@@ -24,7 +24,7 @@ body {
     padding: 0;
     direction: rtl;
     font-family: 'Alef' !important;
-    font-size: 2em;
+    font-size: 200%;
 }
 
 img {
@@ -50,7 +50,7 @@ ol {
     width: 100%;
     text-align: center;
     padding: 25px 0;
-    font-size: 4.2em;
+    font-size: 400%;
     color: white !important;
     white-space: nowrap;
 
@@ -117,7 +117,7 @@ ol {
                 font-size: 0.5em;
                 &.small {
                     margin-top: 15px;
-                    font-size: 0.35em;
+                    font-size: 35%;
                 }
             }
         }
@@ -128,7 +128,7 @@ ol {
             padding: 10px 20px;
             border-radius: 5px 30px;
             margin: 1px;
-            font-size: 1.5em;
+            font-size: 150%;
             @include background-image(linear-gradient(bottom, rgb(98, 171, 217) 0%, rgb(4, 119, 191) 100%));
             text-shadow: 0 1px 0 #cccccc;
         }
@@ -142,7 +142,7 @@ ol {
             background: #fff;
             position: relative;
             z-index: auto;
-            font-size: 2em;
+            font-size: 200%;
 
             .borderradius & {
                 @include border-radius(5px);
@@ -187,69 +187,7 @@ ol {
         code {
             color: rgb(209, 86, 0);
             font-weight: bold;
-            font-size: 2em;
-        }
-
-        blockquote {
-            font-size: 2em;
-            padding: 1em 2em .5em 2em;
-            color: #000;
-            background: #fff;
-            position: relative;
-            border: 1px solid #cde;
-            z-index: auto;
-
-            .borderradius & {
-                @include border-radius(5px);
-            }
-
-            .boxshadow & {
-                > :first-child:before {
-                    content: "";
-                    position: absolute;
-                    z-index: -1;
-                    background: #fff;
-                    top: 0;
-                    bottom: 0;
-                    left: 0;
-                    right: 0;
-                }
-
-                &:after {
-                    content: "";
-                    position: absolute;
-                    z-index: -2;
-                    top: 10px;
-                    bottom: 10px;
-                    left: 0;
-                    right: 50%;
-                    -moz-border-radius: 10px / 100px;
-                    border-radius: 10px / 100px;
-                    @include box-shadow(0, 0, 15px, rgba(0, 0, 0, 0.6));
-                }
-            }
-
-            p {
-                margin: 0;
-            }
-
-            cite {
-                font-size: .5em;
-                font-style: normal;
-                font-weight: bold;
-                color: #888;
-            }
-
-            &:before {
-                content: "“";
-                position: absolute;
-                top: 0;
-                left: 0;
-                font-size: 5em;
-                line-height: 1;
-                color: #ccf0f0;
-                z-index: 1;
-            }
+            font-size: 200%;
         }
 
         .block {
@@ -536,3 +474,8 @@ section {
     margin: 50px 0 0 0;
 }
 
+.footer_comments {
+    font-size: 50%;
+    position: absolute;
+    left: 50px;
+}

@@ -1,4 +1,3 @@
-@charset "IBM862";
 @font-face {
   font-family: 'Alef';
   src: url("../Alef/Alef-bold.eot");
@@ -21,7 +20,7 @@ body {
   padding: 0;
   direction: rtl;
   font-family: 'Alef' !important;
-  font-size: 2em;
+  font-size: 200%;
 }
 
 /* line 30, codeDay.scss */
@@ -53,7 +52,7 @@ ol {
   width: 100%;
   text-align: center;
   padding: 25px 0;
-  font-size: 4.2em;
+  font-size: 400%;
   color: white !important;
   white-space: nowrap;
   text-shadow: -3px 5px 5px #333333, -2px 6px 8px rgba(0, 0, 0, 0.12), -4px 10px 10px rgba(0, 0, 0, 0.15), -6px 14px 12px rgba(0, 0, 0, 0.18), -8px 18px 14px rgba(0, 0, 0, 0.21);
@@ -125,7 +124,7 @@ ol {
 /* line 118, codeDay.scss */
 .deck-container .slide h1 .subtitle.small {
   margin-top: 15px;
-  font-size: 0.35em;
+  font-size: 35%;
 }
 /* line 125, codeDay.scss */
 .deck-container .slide h2 {
@@ -134,7 +133,7 @@ ol {
   padding: 10px 20px;
   border-radius: 5px 30px;
   margin: 1px;
-  font-size: 1.5em;
+  font-size: 150%;
   background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #62abd9), color-stop(100%, #0477bf));
   background-image: -webkit-linear-gradient(bottom, #62abd9 0%, #0477bf 100%);
   background-image: -moz-linear-gradient(bottom, #62abd9 0%, #0477bf 100%);
@@ -152,7 +151,7 @@ ol {
   background: #fff;
   position: relative;
   z-index: auto;
-  font-size: 2em;
+  font-size: 200%;
   /* http://nicolasgallagher.com/css-drop-shadows-without-images/ */
 }
 /* line 147, codeDay.scss */
@@ -209,75 +208,9 @@ ol {
 .deck-container .slide code {
   color: #d15600;
   font-weight: bold;
-  font-size: 2em;
+  font-size: 200%;
 }
 /* line 193, codeDay.scss */
-.deck-container .slide blockquote {
-  font-size: 2em;
-  padding: 1em 2em .5em 2em;
-  color: #000;
-  background: #fff;
-  position: relative;
-  border: 1px solid #cde;
-  z-index: auto;
-}
-/* line 202, codeDay.scss */
-.borderradius .deck-container .slide blockquote {
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-  border-radius: 5px;
-}
-/* line 207, codeDay.scss */
-.boxshadow .deck-container .slide blockquote > :first-child:before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  background: #fff;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
-/* line 218, codeDay.scss */
-.boxshadow .deck-container .slide blockquote:after {
-  content: "";
-  position: absolute;
-  z-index: -2;
-  top: 10px;
-  bottom: 10px;
-  left: 0;
-  right: 50%;
-  -moz-border-radius: 10px / 100px;
-  border-radius: 10px / 100px;
-  -webkit-box-shadow: 0, 0, 15px, rgba(0, 0, 0, 0.6);
-  -moz-box-shadow: 0, 0, 15px, rgba(0, 0, 0, 0.6);
-  box-shadow: 0, 0, 15px, rgba(0, 0, 0, 0.6);
-}
-/* line 232, codeDay.scss */
-.deck-container .slide blockquote p {
-  margin: 0;
-}
-/* line 236, codeDay.scss */
-.deck-container .slide blockquote cite {
-  font-size: .5em;
-  font-style: normal;
-  font-weight: bold;
-  color: #888;
-}
-/* line 243, codeDay.scss */
-.deck-container .slide blockquote:before {
-  content: "“";
-  position: absolute;
-  top: 0;
-  left: 0;
-  font-size: 5em;
-  line-height: 1;
-  color: #ccf0f0;
-  z-index: 1;
-}
-/* line 255, codeDay.scss */
 .deck-container .slide .block {
   font-size: 2em;
   padding: .5em 2em;
@@ -285,39 +218,39 @@ ol {
   position: relative;
   z-index: auto;
 }
-/* line 263, codeDay.scss */
+/* line 201, codeDay.scss */
 .deck-container .slide ::-moz-selection {
   background: #08455f;
   color: #fff;
 }
-/* line 267, codeDay.scss */
+/* line 205, codeDay.scss */
 .deck-container .slide ::selection {
   background: #08455f;
   color: #fff;
 }
-/* line 273, codeDay.scss */
+/* line 211, codeDay.scss */
 .deck-container .slide a, .deck-container .slide a:hover, .deck-container .slide a:focus, .deck-container .slide a:active, .deck-container .slide a:visited {
   color: #33435C;
   text-decoration: none;
 }
-/* line 278, codeDay.scss */
+/* line 216, codeDay.scss */
 .deck-container .slide a:hover, .deck-container .slide a:focus {
   text-decoration: underline;
 }
-/* line 283, codeDay.scss */
+/* line 221, codeDay.scss */
 .deck-container .slide figcaption {
   text-align: center;
   font-size: 0.7em;
 }
-/* line 289, codeDay.scss */
+/* line 227, codeDay.scss */
 .deck-container .slide dl dt {
   font-weight: bold;
 }
-/* line 292, codeDay.scss */
+/* line 230, codeDay.scss */
 .deck-container .slide dl dt.deck-previous + dd, .deck-container .slide dl dt.deck-before + dd {
   opacity: 0.4;
 }
-/* line 296, codeDay.scss */
+/* line 234, codeDay.scss */
 .deck-container .slide dl dt.deck-current + dd {
   opacity: 1;
   -webkit-transition-delay: 0.3s;
@@ -325,7 +258,7 @@ ol {
   -o-transition-delay: 0.3s;
   transition-delay: 0.3s;
 }
-/* line 301, codeDay.scss */
+/* line 239, codeDay.scss */
 .deck-container .slide dl dd {
   margin-left: 35px;
   opacity: 0;
@@ -338,29 +271,29 @@ ol {
   -o-transition-duration: 1s;
   transition-duration: 1s;
 }
-/* line 306, codeDay.scss */
+/* line 244, codeDay.scss */
 .deck-container .slide dl dd + dt {
   margin-top: 15px;
 }
-/* line 313, codeDay.scss */
+/* line 251, codeDay.scss */
 .deck-container .deck-prev-link, .deck-container .deck-next-link {
   background: #fff;
   opacity: 0.5;
 }
-/* line 317, codeDay.scss */
+/* line 255, codeDay.scss */
 .deck-container .deck-prev-link, .deck-container .deck-prev-link:hover, .deck-container .deck-prev-link:focus, .deck-container .deck-prev-link:active, .deck-container .deck-prev-link:visited, .deck-container .deck-next-link, .deck-container .deck-next-link:hover, .deck-container .deck-next-link:focus, .deck-container .deck-next-link:active, .deck-container .deck-next-link:visited {
   color: #599;
 }
-/* line 321, codeDay.scss */
+/* line 259, codeDay.scss */
 .deck-container .deck-prev-link:hover, .deck-container .deck-prev-link:focus, .deck-container .deck-next-link:hover, .deck-container .deck-next-link:focus {
   opacity: 1;
   text-decoration: none;
 }
-/* line 327, codeDay.scss */
+/* line 265, codeDay.scss */
 .deck-container .deck-status {
   font-size: 0.6666em;
 }
-/* line 332, codeDay.scss */
+/* line 270, codeDay.scss */
 .deck-container.deck-menu .slide {
   background: transparent;
   -webkit-border-radius: 5px;
@@ -369,15 +302,15 @@ ol {
   -o-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 336, codeDay.scss */
+/* line 274, codeDay.scss */
 .rgba .deck-container.deck-menu .slide {
   background: rgba(0, 0, 0, 0.1);
 }
-/* line 340, codeDay.scss */
+/* line 278, codeDay.scss */
 .deck-container.deck-menu .slide.deck-current, .rgba .deck-container.deck-menu .slide.deck-current, .no-touch .deck-container.deck-menu .slide:hover {
   background: #fff;
 }
-/* line 346, codeDay.scss */
+/* line 284, codeDay.scss */
 .deck-container .goto-form {
   background: #fff;
   border: 1px solid #cde;
@@ -387,13 +320,13 @@ ol {
   -o-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 351, codeDay.scss */
+/* line 289, codeDay.scss */
 .boxshadow .deck-container .goto-form {
   -webkit-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
   -moz-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
   box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
 }
-/* line 356, codeDay.scss */
+/* line 294, codeDay.scss */
 .deck-container #clock {
   position: fixed;
   z-index: 10;
@@ -401,12 +334,12 @@ ol {
   top: 10px;
   font-size: 0.7em;
 }
-/* line 363, codeDay.scss */
+/* line 301, codeDay.scss */
 .deck-container #clock #clock-time {
   display: inline-block;
   line-height: 0.3;
 }
-/* line 368, codeDay.scss */
+/* line 306, codeDay.scss */
 .deck-container #clock #toggle-clock {
   display: inline-block;
   cursor: pointer;
@@ -429,7 +362,7 @@ ol {
   box-shadow: 1px 1px 2px -1px rgba(0, 0, 0, 0.5);
 }
 
-/* line 382, codeDay.scss */
+/* line 320, codeDay.scss */
 footer {
   position: fixed;
   bottom: 0;
@@ -440,7 +373,7 @@ footer {
   border-top: 2px solid #07AFEF;
   width: 100%;
 }
-/* line 392, codeDay.scss */
+/* line 330, codeDay.scss */
 footer .isoc_footer {
   float: right;
   background-image: url("../../../images/logos/isoc_footer.png");
@@ -448,36 +381,36 @@ footer .isoc_footer {
   height: 50px;
 }
 
-/* line 401, codeDay.scss */
+/* line 339, codeDay.scss */
 .sites {
   clear: both;
   text-align: center;
 }
 
-/* line 407, codeDay.scss */
+/* line 345, codeDay.scss */
 section {
   z-index: 1;
   max-height: 90%;
 }
 
-/* line 412, codeDay.scss */
+/* line 350, codeDay.scss */
 .ltr {
   direction: ltr;
 }
 
-/* line 418, codeDay.scss */
+/* line 356, codeDay.scss */
 .small,
 .deck-container .slide pre.small,
 .deck-container .slide code.small {
   font-size: 1em;
 }
 
-/* line 422, codeDay.scss */
+/* line 360, codeDay.scss */
 .bold {
   font-weight: bold;
 }
 
-/* line 426, codeDay.scss */
+/* line 364, codeDay.scss */
 #banner {
   z-index: 100;
   left: 200px;
@@ -489,7 +422,7 @@ section {
   padding-right: 10px;
 }
 
-/* line 437, codeDay.scss */
+/* line 375, codeDay.scss */
 #banner .button {
   border: 1px solid #dba500;
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffe788), color-stop(100%, #ffce38));
@@ -520,7 +453,7 @@ section {
   text-align: center;
 }
 
-/* line 467, codeDay.scss */
+/* line 405, codeDay.scss */
 #banner .button:hover {
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffe788), color-stop(100%, #ffe788));
   background: -webkit-linear-gradient(#ffe788, #ffe788);
@@ -531,7 +464,7 @@ section {
   background-color: #ffeca0;
 }
 
-/* line 477, codeDay.scss */
+/* line 415, codeDay.scss */
 #banner .fork {
   position: fixed;
   left: 50%;
@@ -543,13 +476,13 @@ section {
   background-color: #FFE788;
 }
 
-/* line 488, codeDay.scss */
+/* line 426, codeDay.scss */
 #banner .downloads {
   float: right;
   margin: 0 45px 0 0;
 }
 
-/* line 493, codeDay.scss */
+/* line 431, codeDay.scss */
 #banner .downloads span {
   float: left;
   line-height: 52px;
@@ -559,7 +492,7 @@ section {
   text-shadow: rgba(255, 255, 255, 0.2) 0 1px 0;
 }
 
-/* line 502, codeDay.scss */
+/* line 440, codeDay.scss */
 #banner ul {
   list-style: none;
   height: 40px;
@@ -568,17 +501,17 @@ section {
   margin: 0 20px;
 }
 
-/* line 510, codeDay.scss */
+/* line 448, codeDay.scss */
 #banner ul li {
   display: inline;
 }
 
-/* line 514, codeDay.scss */
+/* line 452, codeDay.scss */
 #banner ul li a.button {
   background-color: #FFE788;
 }
 
-/* line 518, codeDay.scss */
+/* line 456, codeDay.scss */
 #banner #logo {
   position: absolute;
   height: 36px;
@@ -589,14 +522,21 @@ section {
   background: url("../../../images/octocat-logo.png");
 }
 
-/* line 529, codeDay.scss */
+/* line 467, codeDay.scss */
 .logo_right {
   float: right;
   margin: 50px 0 0 0;
 }
 
-/* line 534, codeDay.scss */
+/* line 472, codeDay.scss */
 .logo_left {
   float: left;
   margin: 50px 0 0 0;
+}
+
+/* line 477, codeDay.scss */
+.footer_comments {
+  font-size: 50%;
+  position: absolute;
+  left: 50px;
 }
