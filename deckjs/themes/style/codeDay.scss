@@ -4,10 +4,7 @@
 @font-face {
     font-family: 'Alef';
     src: url('../Alef/Alef-bold.eot');
-    src: url('../Alef/Alef-bold.eot?#iefix') format('embedded-opentype'),
-    url('../Alef/Alef-bold.woff') format('woff'),
-    url('../Alef/Alef-bold.ttf') format('truetype'),
-    url('../Alef/Alef-bold.svg#alefbold') format('svg');
+    src: url('../Alef/Alef-bold.eot?#iefix') format('embedded-opentype'), url('../Alef/Alef-bold.woff') format('woff'), url('../Alef/Alef-bold.ttf') format('truetype'), url('../Alef/Alef-bold.svg#alefbold') format('svg');
     font-weight: bold;
     font-style: normal;
 
@@ -16,57 +13,32 @@
 @font-face {
     font-family: 'Alef';
     src: url('../Alef/Alef-regular.eot');
-    src: url('../Alef/Alef-regular.eot?#iefix') format('embedded-opentype'),
-    url('../Alef/Alef-regular.woff') format('woff'),
-    url('../Alef/Alef-regular.ttf') format('truetype'),
-    url('../Alef/Alef-regular.svg#alefregular') format('svg');
+    src: url('../Alef/Alef-regular.eot?#iefix') format('embedded-opentype'), url('../Alef/Alef-regular.woff') format('woff'), url('../Alef/Alef-regular.ttf') format('truetype'), url('../Alef/Alef-regular.svg#alefregular') format('svg');
     font-weight: normal;
     font-style: normal;
 
 }
 
-
 body {
     margin: 8px auto;
     padding: 0;
-    direction:rtl;
+    direction: rtl;
     font-family: 'Alef' !important;
     font-size: 2em;
 }
 
-ol{
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
+}
+
+ol {
     padding: 10px 50px 0 0;
 }
 
-.slide{
+.slide {
     overflow: hidden;
-}
-
-.iscoWatermark {
-    /** might be problematic with mobile devices */
-    max-width: 1024px;
-    z-index: 0;
-
-    .left, .right {
-        position: absolute;
-        width: 160px;
-        height: 326px;
-
-    }
-
-    .left {
-        left: 0;
-        top: 30px;
-        background: url("../../images/isoc-left.png") no-repeat;
-        opacity: 0.4;
-
-    }
-    .right {
-        right: 0;
-        bottom: 30px;
-        background: url("../../images/isoc-right.png") no-repeat;
-        opacity: 0.75;
-    }
 }
 
 .isoc {
@@ -82,11 +54,7 @@ ol{
     color: white !important;
     white-space: nowrap;
 
-    text-shadow: -3px 5px 5px #333,
-    -2px 6px 8px rgba(0, 0, 0, .12),
-    -4px 10px 10px rgba(0, 0, 0, .15),
-    -6px 14px 12px rgba(0, 0, 0, .18),
-    -8px 18px 14px rgba(0, 0, 0, .21);
+    text-shadow: -3px 5px 5px #333, -2px 6px 8px rgba(0, 0, 0, .12), -4px 10px 10px rgba(0, 0, 0, .15), -6px 14px 12px rgba(0, 0, 0, .18), -8px 18px 14px rgba(0, 0, 0, .21);
 
 }
 
@@ -156,31 +124,13 @@ ol{
 
         h2 {
             border-bottom: 0;
-            color: rgb(255,255,255);
+            color: rgb(255, 255, 255);
             padding: 10px 20px;
             border-radius: 5px 30px;
             margin: 1px;
-            font-size:1.5em;
-            @include background-image(linear-gradient(bottom, rgb(98,171, 217) 0%, rgb(4,119, 191) 100%));
-            text-shadow: 0 1px 0 #cccccc,
-//            //0 -2px 0 #c9c9c9,
-//            //0 -3px 0 #bbbbbb,
-//            //0 -4px 0 #b9b9b9,
-//            //0 -5px 0 #aaaaaa,
-//            //0 -6px 1px rgba(0, 0, 0, 0.1),
-            0 0 5px rgba(0, 0, 0, 0.1),
-            0 -1px 3px rgba(0, 0, 0, 0.3),
-            0 -3px 5px rgba(0, 0, 0, 0.2),
-            0 -5px 10px rgba(0, 0, 0, 0.25),
-            0 -10px 10px rgba(0, 0, 0, 0.2),
-            0 -20px 20px rgba(0, 0, 0, 0.15);
-            /*
-            background-image: -o-linear-gradient(bottom, rgb(156, 207, 222) 0%, rgb(7, 118, 135) 50%);
-            background-image: -moz-linear-gradient(bottom, rgb(156, 207, 222) 0%, rgb(7, 118, 135) 50%);
-            background-image: -webkit-linear-gradient(bottom, rgb(156, 207, 222) 0%, rgb(7, 118, 135) 50%);
-            background-image: -ms-linear-gradient(bottom, rgb(156, 207, 222) 0%, rgb(7, 118, 135) 50%);
-            background-image: linear-gradient(to bottom, rgb(156, 207, 222) 0%, rgb(7, 118, 135) 50%);
-*/
+            font-size: 1.5em;
+            @include background-image(linear-gradient(bottom, rgb(98, 171, 217) 0%, rgb(4, 119, 191) 100%));
+            text-shadow: 0 1px 0 #cccccc;
         }
 
         h3 {
@@ -235,7 +185,7 @@ ol{
         }
 
         code {
-            color: rgb(209,86,0);
+            color: rgb(209, 86, 0);
             font-weight: bold;
             font-size: 2em;
         }
@@ -448,28 +398,28 @@ footer {
     }
 }
 
-
-.sites{
+.sites {
     clear: both;
     text-align: center;
 
 }
 
-section{
+section {
     z-index: 1;
+    max-height: 90%;
 }
 
-.ltr{
+.ltr {
     direction: ltr;
 }
 
 .small,
 .deck-container .slide pre.small,
-.deck-container .slide code.small{
+.deck-container .slide code.small {
     font-size: 1em;
 }
 
-.bold{
+.bold {
     font-weight: bold;
 }
 
@@ -483,6 +433,7 @@ section{
     border-radius: 0px 2px 2px 0px;
     padding-right: 10px;
 }
+
 #banner .button {
     border: 1px solid #dba500;
     background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffe788), color-stop(100%, #ffce38));
@@ -512,6 +463,7 @@ section{
     display: inline-block;
     text-align: center;
 }
+
 #banner .button:hover {
     background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffe788), color-stop(100%, #ffe788));
     background: -webkit-linear-gradient(#ffe788, #ffe788);
@@ -521,6 +473,7 @@ section{
     background: linear-gradient(#ffe788, #ffe788);
     background-color: #ffeca0;
 }
+
 #banner .fork {
     position: fixed;
     left: 50%;
@@ -531,10 +484,12 @@ section{
     font-size: 14px;
     background-color: #FFE788;
 }
+
 #banner .downloads {
     float: right;
     margin: 0 45px 0 0;
 }
+
 #banner .downloads span {
     float: left;
     line-height: 52px;
@@ -543,6 +498,7 @@ section{
     text-transform: uppercase;
     text-shadow: rgba(255, 255, 255, 0.2) 0 1px 0;
 }
+
 #banner ul {
     list-style: none;
     height: 40px;
@@ -550,12 +506,15 @@ section{
     float: left;
     margin: 0 20px;
 }
+
 #banner ul li {
     display: inline;
 }
+
 #banner ul li a.button {
     background-color: #FFE788;
 }
+
 #banner #logo {
     position: absolute;
     height: 36px;
@@ -566,3 +525,14 @@ section{
     background: url("../../../images/octocat-logo.png");
 
 }
+
+.logo_right {
+    float: right;
+    margin: 50px 0 0 0;
+}
+
+.logo_left {
+    float: left;
+    margin: 50px 0 0 0;
+}
+
