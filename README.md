@@ -5,6 +5,6 @@
 
 אין צורך להוריד את המצגת למחשבכם וניתן לצפות בה ישירות כאן
 
-[http://nirgeier.github.io/openDayCoding]()
+[http://nirgeier.github.io/openDayCoding](http://nirgeier.github.io/openDayCoding/)
 
 תודה רבה לכל מי שנוטל חלק בפרוייקט
